@@ -8,10 +8,10 @@ export const metadata = {
     title: 'Case Studies - NextLayer Labs Success Stories',
     description: 'Explore our case studies and success stories showcasing digital transformation and technology solutions.',
     type: 'website',
-    url: 'https://nextlayerlabs.com/case-studies',
+    url: 'https://nextlayerlabs.in/case-studies',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.com/case-studies',
+    canonical: 'https://nextlayerlabs.in/case-studies',
   },
   other: {
     'application/ld+json': JSON.stringify({
@@ -19,7 +19,7 @@ export const metadata = {
       "@type": "CollectionPage",
       "name": "NextLayer Labs Case Studies",
       "description": "Collection of case studies and success stories from NextLayer Labs technology solutions",
-      "url": "https://nextlayerlabs.com/case-studies"
+      "url": "https://nextlayerlabs.in/case-studies"
     })
   }
 };

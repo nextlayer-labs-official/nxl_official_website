@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { Code, Smartphone, Globe, Database, Layers, Zap, CheckCircle, ArrowRight, Phone, Filter } from 'lucide-react';
 
 export default function FullStackDevelopmentPage() {
@@ -211,10 +213,6 @@ export default function FullStackDevelopmentPage() {
     ? technologies
     : technologies.filter(tech => tech.category === activeFilter);
 
-  const scrollToContact = () => {
-    window.location.href = '/contact';
-  };
-
   return (
     <main style={{ paddingTop: '2rem' }}>
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-brand-900 text-white pt-20 sm:pt-24 lg:pt-32 pb-16 sm:pb-20 lg:pb-24">
@@ -232,19 +230,21 @@ export default function FullStackDevelopmentPage() {
                 We design and build secure, scalable software systems tailored to business operations — from internal platforms to customer-facing digital applications.
               </p>
               <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-                <button
-                  onClick={scrollToContact}
+                <Link
+                  href="/contact"
                   className="bg-brand-600 hover:bg-brand-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all duration-200 text-sm sm:text-base"
                 >
                   <span>Start Your Project</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-                </button>
+                </Link>
               </div>
             </div>
             <div className="relative order-first lg:order-last px-4 sm:px-0">
-              <img
-                src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800"
+              <Image
+                src="/dev-multiple-screens.jpg"
                 alt="Full-stack developer working on multiple screens"
+                width={800}
+                height={534}
                 className="rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
               <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-white p-3 sm:p-4 rounded-xl shadow-lg">
@@ -531,9 +531,11 @@ export default function FullStackDevelopmentPage() {
               </div>
             </div>
             <div className="relative order-first lg:order-last px-4 sm:px-0">
-              <img
-                src="https://images.pexels.com/photos/3861961/pexels-photo-3861961.jpeg?auto=compress&cs=tinysrgb&w=800"
+              <Image
+                src="/dev-team-collaboration.jpg"
                 alt="Development team collaborating on project"
+                width={800}
+                height={534}
                 className="rounded-2xl shadow-xl w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
               <div className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
@@ -556,15 +558,18 @@ export default function FullStackDevelopmentPage() {
             Let's discuss your project requirements and create a custom development solution for your business.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-            <button
-              onClick={scrollToContact}
-              className="bg-white text-brand-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors duration-200 text-sm sm:text-base"
+            <Link
+              href="/contact"
+              className="bg-white text-brand-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors duration-200 text-sm sm:text-base text-center"
             >
               Start Your Project
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors duration-200 text-sm sm:text-base">
+            </Link>
+            <a
+              href="tel:+916363934148"
+              className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors duration-200 text-sm sm:text-base text-center"
+            >
               Call: +91 6363934148
-            </button>
+            </a>
           </div>
         </div>
       </section>

@@ -1,12 +1,9 @@
 import React from 'react';
-import { Award, Users, Globe, CheckCircle } from 'lucide-react';
+import Image from 'next/image';
+import { aboutAchievements, aboutBadge, aboutParagraphs, aboutImage } from './aboutContent';
 
 const About = () => {
-  const achievements = [
-    { icon: Award, title: "Projects Delivered", value: "10+" },
-    { icon: Globe, title: "Success Rate", value: "99.5%" },
-    { icon: Globe, title: "Industries Served", value: "5+" }
-  ];
+  const achievements = aboutAchievements;
 
   const taglines = [
     "Innovate • Build • Scale",
@@ -23,22 +20,15 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
               About <span className="text-brand-600">NextLayer Labs</span>
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 mb-4 sm:mb-6 leading-relaxed">
-              NextLayer Labs is a business-focused IT consulting and technology solutions company delivering secure infrastructure, scalable digital systems, and reliable software platforms.
-            </p>
-            <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-              Our expertise spans IT architecture, network security, cloud-based systems, custom web applications, and managed IT services. We follow a structured, results-driven approach that ensures every deployment is secure, optimized, and aligned with business objectives.
-            </p>
-            <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-              We partner with organizations to modernize their technology environments, improve operational efficiency, and implement systems designed for long-term scalability.
-            </p>
-            <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-              Our mission is simple — to engineer technology that works seamlessly, securely, and sustainably.
-            </p>
+            {aboutParagraphs.map((paragraph, index) => (
+              <p key={index} className="text-base sm:text-lg text-slate-600 mb-4 sm:mb-6 last:mb-6 sm:last:mb-8 leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
 
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <span className="bg-green-100 text-green-700 text-xs sm:text-sm font-medium px-3 py-1 rounded-full">
-                MSME Registered – Government of India
+                {aboutBadge}
               </span>
             </div>
 
@@ -62,9 +52,11 @@ const About = () => {
 
           <div className="relative order-first lg:order-last px-4 sm:px-0">
             <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Technology professionals in modern workspace"
+              <Image
+                src={aboutImage.src}
+                alt={aboutImage.alt}
+                width={aboutImage.width}
+                height={aboutImage.height}
                 className="rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
               <div className="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">

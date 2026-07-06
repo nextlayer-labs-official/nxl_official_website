@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Mail, Phone, Linkedin, Twitter, Facebook } from 'lucide-react';
+import Image from 'next/image';
+import { Mail, Phone, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,9 +11,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div className="col-span-1 sm:col-span-2 lg:col-span-1 text-center sm:text-left">
             <div className="flex items-center mb-6 justify-center sm:justify-start">
-              <img
-                src="/next_logo_1_2 copy copy.svg"
+              <Image
+                src="/logo-primary.svg"
                 alt="NextLayer Labs"
+                width={180}
+                height={50}
                 className="h-[50px] sm:h-[50px] w-auto"
               />
             </div>
@@ -20,15 +23,14 @@ const Footer = () => {
               Your trusted technology partner providing comprehensive solutions from e-waste reduction to career building and expert advisory services.
             </p>
             <div className="flex space-x-4 justify-center sm:justify-start">
-              <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors duration-200">
+              <a
+                href="https://linkedin.com/company/nextlayer-labs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors duration-200"
+              >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
-              {/* <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors duration-200">
-                <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-              <a href="#" className="w-9 h-9 sm:w-10 sm:h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors duration-200">
-                <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a> */}
             </div>
           </div>
 

@@ -1,14 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import { ArrowRight, Award, Globe } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { aboutAchievements, aboutBadge, aboutParagraphs, aboutImage } from './aboutContent';
 
 const AboutSection = () => {
-  const achievements = [
-    { icon: Award, title: "Projects Delivered", value: "10+" },
-    { icon: Globe, title: "Success Rate", value: "99.5%" },
-    { icon: Globe, title: "Industries Served", value: "5+" }
-  ];
+  const achievements = aboutAchievements;
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
@@ -19,12 +16,12 @@ const AboutSection = () => {
               About <span className="text-brand-600">NextLayer Labs</span>
             </h2>
             <p className="text-base sm:text-lg text-slate-600 mb-6 sm:mb-8 leading-relaxed">
-              NextLayer Labs is a business-focused IT consulting and technology solutions company delivering secure infrastructure, scalable digital systems, and reliable software platforms. Our expertise spans IT architecture, network security, cloud-based systems, custom web applications, and managed IT services. We follow a structured, results-driven approach that ensures every deployment is secure, optimized, and aligned with business objectives.
+              {aboutParagraphs[0]} {aboutParagraphs[1]}
             </p>
 
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <span className="bg-green-100 text-green-700 text-xs sm:text-sm font-medium px-3 py-1 rounded-full">
-                MSME Registered – Government of India
+                {aboutBadge}
               </span>
             </div>
 
@@ -57,10 +54,10 @@ const AboutSection = () => {
           <div className="relative order-first lg:order-last px-4 sm:px-0">
             <div className="relative">
               <Image
-                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg"
-                alt="Technology professionals in modern workspace"
-                width={800}
-                height={600}
+                src={aboutImage.src}
+                alt={aboutImage.alt}
+                width={aboutImage.width}
+                height={aboutImage.height}
                 className="rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
               <div className="absolute -bottom-4 sm:-bottom-6 -left-2 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">

@@ -8,10 +8,10 @@ export const metadata = {
     title: 'Contact NextLayer Labs - Get Technology Solutions',
     description: 'Contact us for comprehensive technology solutions. Free consultation available for all services.',
     type: 'website',
-    url: 'https://nextlayerlabs.com/contact',
+    url: 'https://nextlayerlabs.in/contact',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.com/contact',
+    canonical: 'https://nextlayerlabs.in/contact',
   },
   other: {
     'application/ld+json': JSON.stringify({
@@ -19,7 +19,7 @@ export const metadata = {
       "@type": "ContactPage",
       "name": "Contact NextLayer Labs",
       "description": "Contact page for NextLayer Labs technology solutions and services",
-      "url": "https://nextlayerlabs.com/contact",
+      "url": "https://nextlayerlabs.in/contact",
       "mainEntity": {
         "@type": "Organization",
         "name": "NextLayer Labs",
@@ -27,7 +27,7 @@ export const metadata = {
           "@type": "ContactPoint",
           "telephone": "+91-6363934148",
           "contactType": "customer service",
-          "email": "info@nextlayerlabs.com"
+          "email": "info@nextlayerlabs.in"
         }
       }
     })

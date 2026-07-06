@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Mail, Phone, CheckCircle, ArrowRight, Shield, Server, Network } from 'lucide-react';
 
 const Contact = () => {
@@ -123,9 +124,11 @@ const Contact = () => {
           <div>
             <div className="bg-slate-50 rounded-xl overflow-hidden h-full border border-slate-200 shadow-sm">
               <div className="relative">
-                <img
-                  src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                <Image
+                  src="/it-infrastructure-servers.jpg"
                   alt="IT infrastructure and technology solutions"
+                  width={1200}
+                  height={420}
                   className="w-full h-64 sm:h-72 lg:h-80 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent"></div>

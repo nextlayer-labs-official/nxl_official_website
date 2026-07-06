@@ -1,32 +1,14 @@
 import React from 'react';
-import { Linkedin, Twitter, MessageCircle, Instagram, Users, TrendingUp } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
-const FAQSection = () => {
+const ConnectSection = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
       icon: Linkedin,
       url: "https://linkedin.com/company/nextlayer-labs",
       color: "bg-blue-600 hover:bg-blue-700"
-    },
-    // {
-    //   name: "Twitter",
-    //   icon: Twitter,
-    //   url: "https://twitter.com/nextlayerlabs",
-    //   color: "bg-sky-500 hover:bg-sky-600"
-    // },
-    // {
-    //   name: "WhatsApp",
-    //   icon: MessageCircle,
-    //   url: "https://wa.me/917349546714",
-    //   color: "bg-brand-600 hover:bg-brand-700"
-    // },
-    // {
-    //   name: "Instagram",
-    //   icon: Instagram,
-    //   url: "https://instagram.com/nextlayerlabs",
-    //   color: "bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
-    // }
+    }
   ];
 
   return (
@@ -42,7 +24,7 @@ const FAQSection = () => {
           </p>
         </div>
 
-        {/* Stay Connected & Informed Section - Direct Integration */}
+        {/* Stay Connected & Informed Section */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-brand-50 to-blue-50 rounded-xl p-6 sm:p-8 border border-brand-200 shadow-lg">
             <div className="text-center">
@@ -50,10 +32,10 @@ const FAQSection = () => {
               <p className="text-slate-600 text-base sm:text-lg mb-6">
                 Connect with tech enthusiasts, industry professionals, and fellow innovators
               </p>
-              
+
               {/* Quick Social Links */}
               <div className="flex justify-center space-x-3 mb-6">
-                {socialLinks.slice(0, 4).map((social, index) => {
+                {socialLinks.map((social, index) => {
                   const Icon = social.icon;
                   return (
                     <a
@@ -68,24 +50,6 @@ const FAQSection = () => {
                   );
                 })}
               </div>
-
-              {/* Community Benefits */}
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
-                <div className="bg-white/50 rounded-lg p-4">
-                  <div className="flex items-center justify-center mb-2">
-                    <Users className="w-5 h-5 text-brand-600 mr-2" />
-                    <div className="text-2xl font-bold text-brand-600">1K+</div>
-                  </div>
-                  <div className="text-slate-600 text-sm">Community Members</div>
-                </div>
-                <div className="bg-white/50 rounded-lg p-4">
-                  <div className="flex items-center justify-center mb-2">
-                    <TrendingUp className="w-5 h-5 text-blue-600 mr-2" />
-                    <div className="text-2xl font-bold text-blue-600">Daily</div>
-                  </div>
-                  <div className="text-slate-600 text-sm">Tech Updates</div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -94,4 +58,4 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection;
+export default ConnectSection;

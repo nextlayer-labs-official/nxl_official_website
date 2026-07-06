@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ArrowRight,
   TrendingUp,
@@ -43,8 +44,7 @@ const CaseStudies = () => {
         { metric: 'Completion Rate', value: '90%', icon: TrendingUp },
         { metric: 'Project Built', value: '1', icon: DollarSign },
       ],
-      image:
-        'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: '/web-bootcamp.jpg',
       category: 'Training',
       color: 'emerald',
       href: '/contact',
@@ -133,10 +133,11 @@ const CaseStudies = () => {
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${styles.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-10`}
                   />
-                  <img
+                  <Image
                     src={caseStudy.image}
                     alt={caseStudy.title}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/20" />
 

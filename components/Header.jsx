@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronRight, ChevronDown, Wrench, Server, Code } from 'lucide-react';
 
@@ -101,15 +102,21 @@ const Header = () => {
 
           {
             (isScrolled || !isHomePage) ? (
-              <img
+              <Image
                 src="/logo_secondary.svg"
                 alt="NextLayer Labs"
+                width={180}
+                height={50}
+                priority
                 className="h-[50px] sm:h-[50px] w-auto"
               />
             ) : (
-              <img
-                src="/next_logo_1_2 copy copy.svg"
+              <Image
+                src="/logo-primary.svg"
                 alt="NextLayer Labs"
+                width={180}
+                height={50}
+                priority
                 className="h-[50px] sm:h-[50px] w-auto"
               />
              )
@@ -257,9 +264,11 @@ const Header = () => {
       >
         <div className="h-full overflow-y-auto">
           <div className="p-6 border-b border-slate-200 flex items-center justify-between">
-            <img
+            <Image
               src="/logo_secondary.svg"
               alt="NextLayer Labs"
+              width={162}
+              height={45}
               className="h-[45px] w-auto"
             />
             <button

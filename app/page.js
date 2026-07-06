@@ -3,7 +3,7 @@ import BrandsGlider from '../components/BrandsGlider';
 import Services from '../components/Services';
 import AboutSection from '../components/AboutSection';
 import Testimonials from '../components/Testimonials';
-import FAQSection from '../components/FAQSection';
+import ConnectSection from '../components/ConnectSection';
 import HowWeWork from '../components/HowWeWork';
 import WhyChooseUs from '../components/WhyChooseUs';
 import IndustriesSection from '../components/IndustriesSection';
@@ -16,7 +16,7 @@ export const metadata = {
     title: 'NextLayer Labs - Complete Technology Solutions Provider',
     description: 'Transform your business with comprehensive technology services. From computer repair to full-stack development and corporate training.',
     type: 'website',
-    url: 'https://nextlayerlabs.com',
+    url: 'https://nextlayerlabs.in',
   },
   twitter: {
     card: 'summary_large_image',
@@ -24,7 +24,7 @@ export const metadata = {
     description: 'Transform your business with comprehensive technology services. From computer repair to full-stack development and corporate training.',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.com',
+    canonical: 'https://nextlayerlabs.in',
   },
   other: {
     'application/ld+json': JSON.stringify({
@@ -32,13 +32,13 @@ export const metadata = {
       "@type": "Organization",
       "name": "NextLayer Labs",
       "description": "Complete Technology Solutions Provider offering computer repair, technical support, development, and training services",
-      "url": "https://nextlayerlabs.com",
-      "logo": "https://nextlayerlabs.com/Group%2040545.svg",
+      "url": "https://nextlayerlabs.in",
+      "logo": "https://nextlayerlabs.in/logo_secondary.svg",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+91-6363934148",
         "contactType": "customer service",
-        "email": "info@nextlayerlabs.com"
+        "email": "info@nextlayerlabs.in"
       },
       "address": {
         "@type": "PostalAddress",
@@ -47,8 +47,7 @@ export const metadata = {
         "addressCountry": "India"
       },
       "sameAs": [
-        "https://linkedin.com/company/nextlayerlabs",
-        "https://twitter.com/nextlayerlabs"
+        "https://linkedin.com/company/nextlayer-labs"
       ]
     }),
   },
@@ -65,7 +64,7 @@ export default function HomePage() {
       <IndustriesSection />
       <HowWeWork />
       <Testimonials />
-      <FAQSection />
+      <ConnectSection />
     </>
   );
 }

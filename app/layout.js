@@ -1,4 +1,5 @@
 import "./globals.css";
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
@@ -15,7 +16,7 @@ export const metadata = {
     description:
       "Comprehensive IT solutions including development, design, marketing, and support services",
     type: "website",
-    url: "https://nextlayerlabs.com",
+    url: "https://nextlayerlabs.in",
   },
 };
 
@@ -36,9 +37,12 @@ export default function RootLayout({ children }) {
           className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-950"
         >
           <div className="flex flex-col items-center gap-6">
-            <img
-              src="/next_logo_1_2 copy copy.svg"
+            <Image
+              src="/logo-primary.svg"
               alt="NextLayer Labs"
+              width={160}
+              height={64}
+              priority
               className="h-14 sm:h-16 w-auto opacity-90"
             />
 

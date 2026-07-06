@@ -1,5 +1,5 @@
-'use client';
-
+import Link from 'next/link';
+import Image from 'next/image';
 import { Wrench, Clock, Shield, Headphones, Server, Wifi, Monitor, Settings, CheckCircle, ArrowRight, Phone } from 'lucide-react';
 
 export default function TechnicalSupportPage() {
@@ -53,10 +53,6 @@ export default function TechnicalSupportPage() {
     "Latest tools and diagnostic equipment"
   ];
 
-  const scrollToContact = () => {
-    window.location.href = '/contact';
-  };
-
   return (
     <main style={{ paddingTop: '2rem' }}>
       {/* Hero Section */}
@@ -75,19 +71,21 @@ export default function TechnicalSupportPage() {
                 Proactive IT management, infrastructure monitoring, and long-term technology support designed to keep your business secure, stable, and continuously optimized.
               </p>
               <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center lg:justify-start">
-                <button
-                  onClick={scrollToContact}
+                <Link
+                  href="/contact"
                   className="bg-brand-700 hover:bg-brand-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all duration-200 text-sm sm:text-base"
                 >
                   <span>Get Support Now</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
-                </button>
+                </Link>
               </div>
             </div>
             <div className="relative order-first lg:order-last px-4 sm:px-0">
-              <img
-                src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=800"
+              <Image
+                src="/support-specialist-server.jpg"
                 alt="Technical support specialist working on server"
+                width={800}
+                height={534}
                 className="rounded-2xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
               <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-white p-3 sm:p-4 rounded-xl shadow-lg">
@@ -160,9 +158,12 @@ export default function TechnicalSupportPage() {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full mt-6 bg-brand-700 text-white py-3 rounded-lg font-semibold hover:bg-brand-800 transition-colors duration-200 text-sm sm:text-base">
+                <Link
+                  href="/contact"
+                  className="block w-full mt-6 bg-brand-700 text-white py-3 rounded-lg font-semibold hover:bg-brand-800 transition-colors duration-200 text-sm sm:text-base text-center"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             ))}
           </div>
@@ -190,9 +191,11 @@ export default function TechnicalSupportPage() {
               </div>
             </div>
             <div className="relative order-first lg:order-last px-4 sm:px-0">
-              <img
-                src="https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg?auto=compress&cs=tinysrgb&w=800"
+              <Image
+                src="/support-team-monitoring.jpg"
                 alt="Technical support team monitoring systems"
+                width={800}
+                height={534}
                 className="rounded-2xl shadow-xl w-full h-64 sm:h-80 lg:h-96 object-cover"
               />
               <div className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
@@ -216,15 +219,18 @@ export default function TechnicalSupportPage() {
             Ensure your systems remain secure, monitored, and optimized.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-            <button
-              onClick={scrollToContact}
-              className="bg-white text-brand-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors duration-200 text-sm sm:text-base"
+            <Link
+              href="/contact"
+              className="bg-white text-brand-700 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-brand-50 transition-colors duration-200 text-sm sm:text-base text-center"
             >
               Get In Touch With Us
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors duration-200 text-sm sm:text-base">
+            </Link>
+            <Link
+              href="/contact"
+              className="border-2 border-white text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-colors duration-200 text-sm sm:text-base text-center"
+            >
               Discuss Support Options
-            </button>
+            </Link>
           </div>
         </div>
       </section>

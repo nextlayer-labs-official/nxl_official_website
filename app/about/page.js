@@ -8,10 +8,10 @@ export const metadata = {
     title: 'About NextLayer Labs - Technology Solutions Provider',
     description: 'Learn about our mission to reduce e-waste and build careers through comprehensive technology solutions.',
     type: 'website',
-    url: 'https://nextlayerlabs.com/about',
+    url: 'https://nextlayerlabs.in/about',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.com/about',
+    canonical: 'https://nextlayerlabs.in/about',
   },
   other: {
     'application/ld+json': JSON.stringify({
@@ -19,7 +19,7 @@ export const metadata = {
       "@type": "AboutPage",
       "name": "About NextLayer Labs",
       "description": "Learn about NextLayer Labs - our mission, vision, and team dedicated to sustainable technology solutions",
-      "url": "https://nextlayerlabs.com/about",
+      "url": "https://nextlayerlabs.in/about",
       "mainEntity": {
         "@type": "Organization",
         "name": "NextLayer Labs",
