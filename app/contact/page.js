@@ -8,10 +8,23 @@ export const metadata = {
     title: 'Contact NextLayer Labs - Get Technology Solutions',
     description: 'Contact us for comprehensive technology solutions. Free consultation available for all services.',
     type: 'website',
-    url: 'https://nextlayerlabs.in/contact',
+    url: '/contact',
+    images: [
+      {
+        url: '/it-infrastructure-servers.jpg',
+        width: 1200,
+        height: 420,
+        alt: 'NextLayer Labs IT infrastructure and technology solutions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact NextLayer Labs - Get Technology Solutions',
+    description: 'Contact us for comprehensive technology solutions. Free consultation available for all services.',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.in/contact',
+    canonical: '/contact',
   },
   other: {
     'application/ld+json': JSON.stringify({

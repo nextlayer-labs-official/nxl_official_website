@@ -8,10 +8,23 @@ export const metadata = {
     title: 'About NextLayer Labs - Technology Solutions Provider',
     description: 'Learn about our mission to reduce e-waste and build careers through comprehensive technology solutions.',
     type: 'website',
-    url: 'https://nextlayerlabs.in/about',
+    url: '/about',
+    images: [
+      {
+        url: '/about-workspace.jpg',
+        width: 800,
+        height: 533,
+        alt: 'NextLayer Labs team in a modern technology workspace',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About NextLayer Labs - Technology Solutions Provider',
+    description: 'Learn about our mission to reduce e-waste and build careers through comprehensive technology solutions.',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.in/about',
+    canonical: '/about',
   },
   other: {
     'application/ld+json': JSON.stringify({

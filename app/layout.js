@@ -6,17 +6,43 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageTransition from "../components/PageTransition";
 
 export const metadata = {
+  metadataBase: new URL("https://nextlayerlabs.in"),
   title: "NextLayer Labs - Technology Solutions & IT Services in Bangalore",
   description:
     "NextLayer Labs provides comprehensive IT solutions including full-stack development, UI/UX design, digital marketing, computer repair, technical support, and corporate training in Bangalore.",
   keywords:
     "IT services Bangalore, full-stack development, UI/UX design, digital marketing, computer repair, technical support, corporate training",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   openGraph: {
+    siteName: "NextLayer Labs",
+    type: "website",
+    locale: "en_IN",
     title: "NextLayer Labs - Technology Solutions & IT Services",
     description:
       "Comprehensive IT solutions including development, design, marketing, and support services",
-    type: "website",
-    url: "https://nextlayerlabs.in",
+    url: "/",
+    images: [
+      {
+        url: "/it-infrastructure-servers.jpg",
+        width: 1200,
+        height: 420,
+        alt: "NextLayer Labs - Technology Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NextLayer Labs - Technology Solutions & IT Services",
+    description:
+      "Comprehensive IT solutions including development, design, marketing, and support services",
   },
 };
 

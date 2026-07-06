@@ -13,6 +13,58 @@ import {
   Eye,
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'IT Infrastructure & Security Services - NextLayer Labs | Network, Servers & Cybersecurity',
+  description:
+    'Secure, scalable IT infrastructure for growing businesses in Bangalore: network design, firewall & endpoint security, server management, and backup & disaster recovery planning.',
+  keywords:
+    'IT infrastructure Bangalore, network security, firewall setup, server management, cybersecurity services, endpoint protection, backup and disaster recovery, NextLayer Labs',
+  openGraph: {
+    title: 'IT Infrastructure & Security Services - NextLayer Labs',
+    description:
+      'Secure, scalable IT infrastructure: network design, firewall & endpoint security, server management, and disaster recovery planning.',
+    type: 'website',
+    url: '/services/it-infrastructure-security',
+    images: [
+      {
+        url: '/it-security-management.jpg',
+        width: 800,
+        height: 534,
+        alt: 'IT infrastructure and security management by NextLayer Labs',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IT Infrastructure & Security Services - NextLayer Labs',
+    description:
+      'Secure, scalable IT infrastructure: network design, firewall & endpoint security, server management, and disaster recovery planning.',
+  },
+  alternates: {
+    canonical: '/services/it-infrastructure-security',
+  },
+  other: {
+    'application/ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "IT Infrastructure & Security",
+      "name": "IT Infrastructure & Security Services",
+      "description":
+        "Network design, firewall and endpoint security, server and infrastructure management, and data backup and disaster recovery services.",
+      "provider": {
+        "@type": "Organization",
+        "name": "NextLayer Labs",
+        "url": "https://nextlayerlabs.in"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bangalore"
+      },
+      "url": "https://nextlayerlabs.in/services/it-infrastructure-security"
+    }),
+  },
+};
+
 export default function ITInfrastructureSecurityPage() {
   const services = [
     {

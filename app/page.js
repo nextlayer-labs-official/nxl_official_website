@@ -16,7 +16,17 @@ export const metadata = {
     title: 'NextLayer Labs - Complete Technology Solutions Provider',
     description: 'Transform your business with comprehensive technology services. From computer repair to full-stack development and corporate training.',
     type: 'website',
-    url: 'https://nextlayerlabs.in',
+    url: '/',
+    siteName: 'NextLayer Labs',
+    locale: 'en_IN',
+    images: [
+      {
+        url: '/it-infrastructure-servers.jpg',
+        width: 1200,
+        height: 420,
+        alt: 'NextLayer Labs - Technology Solutions',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -24,7 +34,7 @@ export const metadata = {
     description: 'Transform your business with comprehensive technology services. From computer repair to full-stack development and corporate training.',
   },
   alternates: {
-    canonical: 'https://nextlayerlabs.in',
+    canonical: '/',
   },
   other: {
     'application/ld+json': JSON.stringify({

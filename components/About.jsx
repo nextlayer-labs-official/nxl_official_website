@@ -17,9 +17,9 @@ const About = () => {
         {/* Main About Section */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16 sm:mb-20">
           <div className="text-center lg:text-left px-4 sm:px-0">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 sm:mb-6">
               About <span className="text-brand-600">NextLayer Labs</span>
-            </h2>
+            </h1>
             {aboutParagraphs.map((paragraph, index) => (
               <p key={index} className="text-base sm:text-lg text-slate-600 mb-4 sm:mb-6 last:mb-6 sm:last:mb-8 leading-relaxed">
                 {paragraph}

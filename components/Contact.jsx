@@ -51,9 +51,9 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-4">
             Let's Build Your <span className="text-brand-600">Technology Future</span>
-          </h2>
+          </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
             Ready to transform your business with cutting-edge technology solutions? Get in touch with our experts for a free consultation.
           </p>

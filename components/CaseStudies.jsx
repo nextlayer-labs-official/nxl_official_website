@@ -107,12 +107,12 @@ const CaseStudies = () => {
             <span className="text-sm font-medium text-blue-900">Success Stories</span>
           </div>
 
-          <h2 className="mb-4 text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h1 className="mb-4 text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
             Transforming Businesses Through
             <span className="mt-2 block bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
               Innovation & Excellence
             </span>
-          </h2>
+          </h1>
 
           <p className="mx-auto max-w-3xl text-lg text-slate-600 sm:text-xl">
             Real results from real partnerships. Discover how we&apos;ve helped

@@ -2,6 +2,58 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Wrench, Clock, Shield, Headphones, Server, Wifi, Monitor, Settings, CheckCircle, ArrowRight, Phone } from 'lucide-react';
 
+export const metadata = {
+  title: 'Managed IT & Support Services - NextLayer Labs | 24/7 Monitoring & Helpdesk',
+  description:
+    'Proactive managed IT services in Bangalore: 24/7 infrastructure monitoring, helpdesk support, AMC services, and IT asset management to keep your business running smoothly.',
+  keywords:
+    'managed IT services Bangalore, AMC services, IT helpdesk support, remote monitoring, IT asset management, 24/7 IT support, NextLayer Labs',
+  openGraph: {
+    title: 'Managed IT & Support Services - NextLayer Labs',
+    description:
+      'Proactive managed IT services: 24/7 infrastructure monitoring, helpdesk support, AMC services, and IT asset management.',
+    type: 'website',
+    url: '/services/managed-it-support',
+    images: [
+      {
+        url: '/support-specialist-server.jpg',
+        width: 800,
+        height: 534,
+        alt: 'NextLayer Labs technical support specialist working on server',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Managed IT & Support Services - NextLayer Labs',
+    description:
+      'Proactive managed IT services: 24/7 infrastructure monitoring, helpdesk support, AMC services, and IT asset management.',
+  },
+  alternates: {
+    canonical: '/services/managed-it-support',
+  },
+  other: {
+    'application/ld+json': JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Managed IT & Support",
+      "name": "Managed IT & Support Services",
+      "description":
+        "Proactive IT management and support services including infrastructure monitoring, helpdesk support, AMC services, and IT asset management.",
+      "provider": {
+        "@type": "Organization",
+        "name": "NextLayer Labs",
+        "url": "https://nextlayerlabs.in"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bangalore"
+      },
+      "url": "https://nextlayerlabs.in/services/managed-it-support"
+    }),
+  },
+};
+
 export default function TechnicalSupportPage() {
   const services = [
     {
