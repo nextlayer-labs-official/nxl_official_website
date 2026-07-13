@@ -50,6 +50,27 @@ components/                    # Section components used across the pages above
 public/                        # Static assets (logos, icons, images)
 ```
 
+## Adding a Case Study
+
+Document each real project shortly after it wraps — details and client sentiment fade fast, and it's much harder to write a credible case study from memory three months later.
+
+Case studies live in `components/CaseStudies.jsx`, in the `cases` array. Each entry needs:
+
+- `title` — short, outcome-focused (e.g. "Business Email Setup & Website Launch")
+- `client` — real client name, or an anonymized descriptor if under NDA
+- `challenge` — the problem before you got involved
+- `solution` — what was actually delivered (tools, stack, timeline if relevant)
+- `results` — 2-3 items of `{ metric, value, icon }`. Only use real numbers/facts you have. If you don't have a quantified before/after, use a descriptive value (e.g. `"SPF + DKIM"`, `"3 Mailboxes"`) rather than inventing a percentage — several existing entries already do this.
+- `image`, `category`, `color`, `href` — follow the pattern of the nearest existing entry
+
+**Keep proof balanced across all three pillars** (IT Infrastructure & Security, Software & Web Development, Managed IT & Support). As of this writing, Managed IT & Support has no case study yet — that should be the next one added once a real support/AMC engagement exists to document. Web Development already has 3, Infrastructure & Security has 2 (Global Laser Solutions, SoftPixel Works).
+
+If a case study is significant enough to be a service's flagship proof point, also consider adding a short "Featured Project" callout directly on that service's page under `app/services/*/page.js` — see the Infrastructure & Security page for the existing pattern.
+
+**Testimonials**: ask the client for a quick quote right when the project ends, while it's easy for them to give one — don't wait. Add real quotes only to `components/Testimonials.jsx`; never write a quote and attribute it to a client who didn't say it.
+
+Revisit this balance roughly quarterly, or whenever a new project closes.
+
 ## Contact Info
 
 Site content is edited directly in the component files under `components/` and the relevant `app/**/page.js` file — there is no CMS or contact-form backend; the Contact page links directly to phone/email.
