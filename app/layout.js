@@ -9,9 +9,9 @@ export const metadata = {
   metadataBase: new URL("https://nextlayerlabs.in"),
   title: "NextLayer Labs - Technology Solutions & IT Services in Bangalore",
   description:
-    "NextLayer Labs provides comprehensive IT solutions including full-stack development, UI/UX design, digital marketing, computer repair, technical support, and corporate training in Bangalore.",
+    "NextLayer Labs delivers secure IT infrastructure, full-stack software development, and managed IT support for growing businesses in Bangalore — from network security and server management to custom web applications and 24/7 technical support.",
   keywords:
-    "IT services Bangalore, full-stack development, UI/UX design, digital marketing, computer repair, technical support, corporate training",
+    "IT services Bangalore, IT infrastructure security, network security, full-stack development, web development, managed IT support, technical support, cybersecurity Bangalore",
   robots: {
     index: true,
     follow: true,
@@ -27,7 +27,7 @@ export const metadata = {
     locale: "en_IN",
     title: "NextLayer Labs - Technology Solutions & IT Services",
     description:
-      "Comprehensive IT solutions including development, design, marketing, and support services",
+      "Secure IT infrastructure, full-stack development, and managed IT support for growing businesses.",
     url: "/",
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "NextLayer Labs - Technology Solutions & IT Services",
     description:
-      "Comprehensive IT solutions including development, design, marketing, and support services",
+      "Secure IT infrastructure, full-stack development, and managed IT support for growing businesses.",
   },
 };
 

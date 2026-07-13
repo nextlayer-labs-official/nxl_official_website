@@ -11,8 +11,8 @@ const HowWeWork = () => {
                         How We <span className="text-brand-600">Work</span>
                     </h2>
                     <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                        Our process is designed to deliver effective technology solutions
-                        that drive positive change for people, businesses, and the planet.
+                        Our process is designed to deliver secure, reliable technology solutions
+                        that help your business operate efficiently and scale with confidence.
                     </p>
                 </div>
                 <div className="flex justify-center">

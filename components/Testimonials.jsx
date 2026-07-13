@@ -22,13 +22,6 @@ const Testimonials = () => {
       role: "CEO",
       company: "Digital Retail Hub",
       rating: 5
-    },
-    {
-      quote: "Their corporate training program upskilled our entire development team. The placement assistance helped us find top talent quickly and efficiently.",
-      author: "Arjun Reddy",
-      role: "HR Manager",
-      company: "Innovation Labs",
-      rating: 5
     }
   ];
 

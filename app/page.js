@@ -9,12 +9,12 @@ import WhyChooseUs from '../components/WhyChooseUs';
 import IndustriesSection from '../components/IndustriesSection';
 
 export const metadata = {
-  title: 'NextLayer Labs - Complete Technology Solutions Provider | Technical Support, Development & Training',
-  description: 'NextLayer Labs offers comprehensive technology services including computer repair, technical support, full-stack development, corporate training, job placement, and stock market advisory. Transform your business with sustainable tech solutions.',
-  keywords: 'technology solutions, computer repair, technical support, web development, corporate training, job placement, stock market advisory, e-waste reduction, IT consulting, NextLayer Labs',
+  title: 'NextLayer Labs - Complete IT Services Provider | Infrastructure, Development & Managed Support',
+  description: 'NextLayer Labs delivers secure IT infrastructure, full-stack software development, and managed IT support for growing businesses. From network security and server management to custom web applications and 24/7 technical support, we help you build technology that scales.',
+  keywords: 'IT services Bangalore, IT infrastructure security, network security, cybersecurity, full-stack development, web development, managed IT support, IT consulting Bangalore, NextLayer Labs',
   openGraph: {
-    title: 'NextLayer Labs - Complete Technology Solutions Provider',
-    description: 'Transform your business with comprehensive technology services. From computer repair to full-stack development and corporate training.',
+    title: 'NextLayer Labs - Complete IT Services Provider',
+    description: 'Secure IT infrastructure, full-stack development, and managed IT support for growing businesses.',
     type: 'website',
     url: '/',
     siteName: 'NextLayer Labs',
@@ -30,8 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NextLayer Labs - Complete Technology Solutions Provider',
-    description: 'Transform your business with comprehensive technology services. From computer repair to full-stack development and corporate training.',
+    title: 'NextLayer Labs - Complete IT Services Provider',
+    description: 'Secure IT infrastructure, full-stack development, and managed IT support for growing businesses.',
   },
   alternates: {
     canonical: '/',
@@ -41,7 +41,7 @@ export const metadata = {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "NextLayer Labs",
-      "description": "Complete Technology Solutions Provider offering computer repair, technical support, development, and training services",
+      "description": "IT consulting and technology solutions provider offering infrastructure & security, software & web development, and managed IT support services",
       "url": "https://nextlayerlabs.in",
       "logo": "https://nextlayerlabs.in/logo_secondary.svg",
       "contactPoint": {
@@ -58,7 +58,37 @@ export const metadata = {
       },
       "sameAs": [
         "https://linkedin.com/company/nextlayer-labs"
-      ]
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT Infrastructure & Security",
+              "url": "https://nextlayerlabs.in/services/it-infrastructure-security"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Software & Web Development",
+              "url": "https://nextlayerlabs.in/services/software-web-development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Managed IT & Support",
+              "url": "https://nextlayerlabs.in/services/managed-it-support"
+            }
+          }
+        ]
+      }
     }),
   },
 };

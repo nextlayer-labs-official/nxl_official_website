@@ -43,7 +43,7 @@ const Services = () => {
             Our <span className="text-brand-600">Technology Services</span>
           </h2>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            From reviving old tech to building careers and providing expert advisory - comprehensive solutions that create positive change for people, businesses, and the planet.
+            Secure infrastructure, custom software, and reliable managed support - comprehensive technology solutions tailored to your business needs.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const Services = () => {
           <div className="bg-gradient-to-r from-brand-600 to-brand-700 rounded-2xl p-6 sm:p-8 text-white">
             <h3 className="text-xl sm:text-2xl font-bold mb-4">Ready to Transform Your Technology Future?</h3>
             <p className="text-brand-50 mb-6 text-sm sm:text-base max-w-2xl mx-auto">
-              From reducing e-waste to building careers and providing expert guidance - let's create positive change together.
+              From strengthening your infrastructure to building custom software and providing ongoing support - let's create the technology foundation your business needs.
             </p>
             <Link
               href="/contact"

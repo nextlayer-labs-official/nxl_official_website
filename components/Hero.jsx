@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Sparkles, CheckCircle2, Code2, Palette, Lightbulb } from 'lucide-react';
+import { ArrowRight, Sparkles, CheckCircle2, Code2, Server, ShieldCheck } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -42,11 +42,15 @@ const Hero = () => {
             <div className="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
               <div className="flex items-center space-x-2 bg-slate-800/60 backdrop-blur-sm px-4 py-2 rounded-full border border-slate-700/50">
                 <CheckCircle2 className="w-4 h-4 text-brand-400" />
+                <span className="text-sm text-slate-300">Infrastructure & Security</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-slate-800/60 backdrop-blur-sm px-4 py-2 rounded-full border border-slate-700/50">
+                <CheckCircle2 className="w-4 h-4 text-brand-400" />
                 <span className="text-sm text-slate-300">Full-Stack Development</span>
               </div>
               <div className="flex items-center space-x-2 bg-slate-800/60 backdrop-blur-sm px-4 py-2 rounded-full border border-slate-700/50">
                 <CheckCircle2 className="w-4 h-4 text-brand-400" />
-                <span className="text-sm text-slate-300">UI/UX Design</span>
+                <span className="text-sm text-slate-300">Managed IT Support</span>
               </div>
             </div>
 
@@ -98,29 +102,34 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  {/* Design Element */}
+                  {/* Infrastructure Element */}
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
-                      <Palette className="w-5 h-5 text-brand-400" />
-                      <span className="text-brand-300 text-sm font-medium">Design</span>
+                      <Server className="w-5 h-5 text-brand-400" />
+                      <span className="text-brand-300 text-sm font-medium">Infrastructure</span>
                     </div>
-                    <div className="grid grid-cols-4 gap-2">
-                      <div className="h-12 bg-gradient-to-br from-brand-400 to-brand-600 rounded-lg"></div>
-                      <div className="h-12 bg-gradient-to-br from-slate-600 to-slate-700 rounded-lg"></div>
-                      <div className="h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg"></div>
-                      <div className="h-12 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg"></div>
+                    <div className="grid grid-cols-2 gap-2">
+                      {['Network', 'Firewall', 'Server', 'Backup'].map((item) => (
+                        <div
+                          key={item}
+                          className="flex items-center space-x-1.5 bg-slate-950/50 rounded-lg px-2.5 py-2 border border-slate-700/30"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                          <span className="text-xs text-slate-300">{item}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
 
-                  {/* Innovation Badge */}
+                  {/* Uptime Badge */}
                   <div className="flex items-center justify-between bg-slate-950/50 rounded-lg p-4 border border-slate-700/30">
                     <div className="flex items-center space-x-3">
                       <div className="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-700 rounded-full flex items-center justify-center">
-                        <Lightbulb className="w-5 h-5 text-white" />
+                        <ShieldCheck className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <div className="text-slate-300 text-sm font-medium">Innovation Score</div>
-                        <div className="text-2xl font-bold text-brand-400">A+</div>
+                        <div className="text-slate-300 text-sm font-medium">Uptime Guarantee</div>
+                        <div className="text-2xl font-bold text-brand-400">99.9%</div>
                       </div>
                     </div>
                   </div>

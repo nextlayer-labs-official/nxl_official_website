@@ -11,6 +11,12 @@ import {
   Target,
   Lightbulb,
   Award,
+  Mail,
+  ShieldCheck,
+  Globe,
+  Server,
+  Lock,
+  Bot,
 } from 'lucide-react';
 
 const CaseStudies = () => {
@@ -65,6 +71,40 @@ const CaseStudies = () => {
       category: 'Web Development',
       color: 'orange',
       href: '/contact',
+    },
+    {
+      title: 'Business Email Setup & Website Launch',
+      client: 'Global Laser Solutions',
+      challenge:
+        'No professional business email in place — all communication was being handled through personal Gmail accounts, with no branded domain presence online.',
+      solution:
+        'Configured a fully authenticated business email environment on Zoho Mail with MX, SPF, and DKIM records across 3 mailboxes, and delivered a fast, statically-hosted Next.js website.',
+      results: [
+        { metric: 'Mailboxes Configured', value: '3', icon: Mail },
+        { metric: 'Email Authentication', value: 'SPF + DKIM', icon: ShieldCheck },
+        { metric: 'Website Platform', value: 'Next.js', icon: Globe },
+      ],
+      image: '/support-specialist-server.jpg',
+      category: 'IT Infrastructure & Security',
+      color: 'indigo',
+      href: '/contact',
+    },
+    {
+      title: 'Digital Product Sales Automation via Telegram',
+      client: 'SoftPixel Works',
+      challenge:
+        'Needed a reliable, self-hosted environment to automate digital product sales through Telegram without depending on third-party platforms.',
+      solution:
+        "Provisioned and configured a production VPS on Ubuntu with Nginx/Apache, MariaDB, and PM2, set up a custom domain with Let's Encrypt SSL, and built a Telegram bot to handle digital product sales end-to-end.",
+      results: [
+        { metric: 'Server Stack', value: 'Ubuntu + Nginx', icon: Server },
+        { metric: 'Secure Domain', value: "Let's Encrypt SSL", icon: Lock },
+        { metric: 'Sales Channel', value: 'Telegram Bot', icon: Bot },
+      ],
+      image: '/it-infrastructure-servers.jpg',
+      category: 'IT Infrastructure & Security',
+      color: 'teal',
+      href: '/contact',
     }
   ];
 
@@ -92,6 +132,22 @@ const CaseStudies = () => {
       text: 'text-orange-600',
       border: 'border-orange-200',
       ring: 'ring-orange-500/20',
+    },
+    indigo: {
+      gradient: 'from-indigo-500 to-blue-500',
+      hoverGradient: 'hover:from-indigo-500 hover:to-blue-500',
+      bg: 'bg-indigo-50',
+      text: 'text-indigo-600',
+      border: 'border-indigo-200',
+      ring: 'ring-indigo-500/20',
+    },
+    teal: {
+      gradient: 'from-teal-500 to-cyan-500',
+      hoverGradient: 'hover:from-teal-500 hover:to-cyan-500',
+      bg: 'bg-teal-50',
+      text: 'text-teal-600',
+      border: 'border-teal-200',
+      ring: 'ring-teal-500/20',
     },
   };
 

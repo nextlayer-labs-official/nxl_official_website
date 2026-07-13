@@ -274,6 +274,139 @@ export default function ITInfrastructureSecurityPage() {
         </div>
       </section>
 
+      {/* Featured Projects Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+              Real Infrastructure{" "}
+              <span className="text-brand-600">Projects We've Delivered</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+              A look at recent infrastructure and security work for our clients.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 px-4 sm:px-0">
+            <div className="bg-slate-50 rounded-xl p-6 sm:p-8 border border-slate-100">
+              <div className="text-xs font-semibold text-brand-600 uppercase tracking-wide mb-2">
+                Global Laser Solutions
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-3">
+                Business Email Setup & Website Launch
+              </h3>
+              <p className="text-slate-600 text-sm sm:text-base mb-4">
+                Migrated from managing everything on personal Gmail to a fully
+                authenticated business email environment on Zoho Mail (MX, SPF,
+                and DKIM records) across 3 mailboxes, alongside a new Next.js
+                website.
+              </p>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-white rounded-lg p-3 text-center border border-slate-100">
+                  <div className="text-sm font-bold text-slate-800">3</div>
+                  <div className="text-[11px] text-slate-500">Mailboxes</div>
+                </div>
+                <div className="bg-white rounded-lg p-3 text-center border border-slate-100">
+                  <div className="text-sm font-bold text-slate-800">SPF + DKIM</div>
+                  <div className="text-[11px] text-slate-500">Authenticated</div>
+                </div>
+                <div className="bg-white rounded-lg p-3 text-center border border-slate-100">
+                  <div className="text-sm font-bold text-slate-800">Next.js</div>
+                  <div className="text-[11px] text-slate-500">Website</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-6 sm:p-8 border border-slate-100">
+              <div className="text-xs font-semibold text-brand-600 uppercase tracking-wide mb-2">
+                SoftPixel Works
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-3">
+                Production Server Setup for Digital Product Sales
+              </h3>
+              <p className="text-slate-600 text-sm sm:text-base mb-4">
+                Provisioned and configured a production VPS on Ubuntu with
+                Nginx/Apache, MariaDB, and PM2, secured with a custom domain
+                and Let's Encrypt SSL, to run an automated Telegram-based
+                sales channel.
+              </p>
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-white rounded-lg p-3 text-center border border-slate-100">
+                  <div className="text-sm font-bold text-slate-800">Ubuntu</div>
+                  <div className="text-[11px] text-slate-500">+ Nginx</div>
+                </div>
+                <div className="bg-white rounded-lg p-3 text-center border border-slate-100">
+                  <div className="text-sm font-bold text-slate-800">SSL</div>
+                  <div className="text-[11px] text-slate-500">Let's Encrypt</div>
+                </div>
+                <div className="bg-white rounded-lg p-3 text-center border border-slate-100">
+                  <div className="text-sm font-bold text-slate-800">Telegram</div>
+                  <div className="text-[11px] text-slate-500">Bot</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/case-studies"
+              className="inline-flex items-center gap-2 text-brand-600 font-semibold hover:text-brand-700 transition-colors duration-200"
+            >
+              View All Case Studies
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Security Partners Section */}
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 sm:mb-12 px-4 sm:px-0">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 mb-4">
+              Backed by{" "}
+              <span className="text-brand-600">Trusted Security Vendors</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+              Our endpoint protection and threat detection recommendations are
+              built on official partnerships with leading cybersecurity vendors.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-3xl mx-auto">
+            <div className="flex items-center gap-4 bg-slate-50 rounded-xl p-6 border border-slate-100">
+              <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center p-2 flex-shrink-0">
+                <Image
+                  src="/trend-micro.svg"
+                  alt="Trend Micro logo"
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <div className="font-semibold text-slate-800">Trend Micro</div>
+                <div className="text-sm text-slate-600">Security Technology Partner</div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 bg-slate-50 rounded-xl p-6 border border-slate-100">
+              <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center p-2 flex-shrink-0">
+                <img
+                  src="https://bdsoft.in/wp-content/uploads/2025/11/cropped-Screenshot-2025-11-24-202443.png"
+                  alt="BD Software Distribution logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <div className="font-semibold text-slate-800">BD Software Distribution</div>
+                <div className="text-sm text-slate-600">Official Bitdefender Reseller Partner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -25,7 +25,7 @@ const Contact = () => {
     "Free technical consultation",
     "Customized solutions for your needs",
     "24/7 technical support available",
-    "Certified professionals and trainers"
+    "Certified professionals and technicians"
   ];
 
   const highlights = [

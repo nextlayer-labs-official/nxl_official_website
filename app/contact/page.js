@@ -2,8 +2,8 @@ import Contact from '../../components/Contact';
 
 export const metadata = {
   title: 'Contact NextLayer Labs - Get Technology Solutions | Free Consultation',
-  description: 'Contact NextLayer Labs for technology solutions. Get free consultation for computer repair, development, training, and technical support services in Bangalore.',
-  keywords: 'contact NextLayer Labs, technology consultation, computer repair contact, development services, technical support, Bangalore contact',
+  description: 'Contact NextLayer Labs for technology solutions. Get a free consultation for IT infrastructure, software development, and managed IT support services in Bangalore.',
+  keywords: 'contact NextLayer Labs, technology consultation, IT infrastructure contact, development services, managed IT support, Bangalore contact',
   openGraph: {
     title: 'Contact NextLayer Labs - Get Technology Solutions',
     description: 'Contact us for comprehensive technology solutions. Free consultation available for all services.',

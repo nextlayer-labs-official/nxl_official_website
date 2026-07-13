@@ -20,7 +20,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-slate-300 mb-6 leading-relaxed text-sm sm:text-base max-w-sm mx-auto sm:mx-0">
-              Your trusted technology partner providing comprehensive solutions from e-waste reduction to career building and expert advisory services.
+              Your trusted technology partner providing secure IT infrastructure, full-stack development, and managed IT support for growing businesses.
             </p>
             <div className="flex space-x-4 justify-center sm:justify-start">
               <a
