@@ -1,20 +1,22 @@
 {
-  "name": "NextLayer Labs - Complete Technology Solutions Provider",
+  "name": "NextLayer Labs - Complete IT Services Provider",
   "short_name": "NextLayer Labs",
-  "description": "Complete Technology Solutions Provider offering computer repair, technical support, development, and training services",
+  "description": "Secure IT infrastructure, full-stack development, and managed IT support for growing businesses.",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "theme_color": "#089A49",
+  "theme_color": "#23C4D8",
   "background_color": "#ffffff",
   "display": "standalone",
   "start_url": "/"
