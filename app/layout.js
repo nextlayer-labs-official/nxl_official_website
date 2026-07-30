@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import PageTransition from "../components/PageTransition";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 export const metadata = {
   metadataBase: new URL("https://nextlayerlabs.in"),
@@ -111,6 +112,8 @@ export default function RootLayout({ children }) {
             animation: preloaderSlide 1.2s ease-in-out infinite;
           }
         `}</style>
+
+        <GoogleAnalytics />
 
         <Header />
         <PageTransition>
