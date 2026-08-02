@@ -17,10 +17,46 @@ import {
   Server,
   Lock,
   Bot,
+  Package,
+  Database,
 } from 'lucide-react';
 
 const CaseStudies = () => {
   const cases = [
+    {
+      title: 'End-to-End Business Operations Platform',
+      client: 'Verma Sharma Colonizer',
+      challenge:
+        'Purchases, sales, inventory, and reporting for the real estate development business were tracked entirely in Excel spreadsheets, with no centralized access control, audit trail, or reliable backup process.',
+      solution:
+        'Built a complete business management platform with role-based access control (RBAC), sales and purchase tracking, inventory management, reporting, and automated backup & restore — using Next.js, Tailwind CSS, Node.js/Express, Prisma, and MySQL, deployed on a production Ubuntu VPS with PM2, Apache/Nginx, and a custom domain.',
+      results: [
+        { metric: 'Access Control', value: 'RBAC', icon: ShieldCheck },
+        { metric: 'Core Modules', value: '4+', icon: Package },
+        { metric: 'Data Protection', value: 'Backup', icon: Database },
+      ],
+      image: '/dev-multiple-screens.jpg',
+      category: 'Web Development',
+      color: 'violet',
+      href: '/contact',
+    },
+    {
+      title: 'Business Email Setup & Website Launch',
+      client: 'Global Laser Solutions',
+      challenge:
+        'No professional business email in place — all communication was being handled through personal Gmail accounts, with no branded domain presence online.',
+      solution:
+        'Configured a fully authenticated business email environment on Zoho Mail with MX, SPF, and DKIM records across 3 mailboxes, and delivered a fast, statically-hosted Next.js website.',
+      results: [
+        { metric: 'Mailboxes Configured', value: '3', icon: Mail },
+        { metric: 'Email Authentication', value: 'SPF+DKIM', icon: ShieldCheck },
+        { metric: 'Website Platform', value: 'Next.js', icon: Globe },
+      ],
+      image: '/support-specialist-server.jpg',
+      category: 'IT Infrastructure & Security',
+      color: 'indigo',
+      href: '/contact',
+    },
     {
       title: 'E-commerce Platform Development',
       client: 'Royal Decants',
@@ -56,6 +92,23 @@ const CaseStudies = () => {
       href: '/contact',
     },
     {
+      title: 'Digital Product Sales Automation via Telegram',
+      client: 'SoftPixel Works',
+      challenge:
+        'Needed a reliable, self-hosted environment to automate digital product sales through Telegram without depending on third-party platforms.',
+      solution:
+        "Provisioned and configured a production VPS on Ubuntu with Nginx/Apache, MariaDB, and PM2, set up a custom domain with Let's Encrypt SSL, and built a Telegram bot to handle digital product sales end-to-end.",
+      results: [
+        { metric: 'Server Stack', value: 'Ubuntu', icon: Server },
+        { metric: 'Secure Domain', value: 'SSL', icon: Lock },
+        { metric: 'Sales Channel', value: 'Telegram', icon: Bot },
+      ],
+      image: '/it-infrastructure-servers.jpg',
+      category: 'IT Infrastructure & Security',
+      color: 'teal',
+      href: '/contact',
+    },
+    {
       title: 'JainSabha Web Application',
       client: 'JainSabha Organization',
       challenge:
@@ -70,40 +123,6 @@ const CaseStudies = () => {
       image: '/dbjs.jpg',
       category: 'Web Development',
       color: 'orange',
-      href: '/contact',
-    },
-    {
-      title: 'Business Email Setup & Website Launch',
-      client: 'Global Laser Solutions',
-      challenge:
-        'No professional business email in place — all communication was being handled through personal Gmail accounts, with no branded domain presence online.',
-      solution:
-        'Configured a fully authenticated business email environment on Zoho Mail with MX, SPF, and DKIM records across 3 mailboxes, and delivered a fast, statically-hosted Next.js website.',
-      results: [
-        { metric: 'Mailboxes Configured', value: '3', icon: Mail },
-        { metric: 'Email Authentication', value: 'SPF + DKIM', icon: ShieldCheck },
-        { metric: 'Website Platform', value: 'Next.js', icon: Globe },
-      ],
-      image: '/support-specialist-server.jpg',
-      category: 'IT Infrastructure & Security',
-      color: 'indigo',
-      href: '/contact',
-    },
-    {
-      title: 'Digital Product Sales Automation via Telegram',
-      client: 'SoftPixel Works',
-      challenge:
-        'Needed a reliable, self-hosted environment to automate digital product sales through Telegram without depending on third-party platforms.',
-      solution:
-        "Provisioned and configured a production VPS on Ubuntu with Nginx/Apache, MariaDB, and PM2, set up a custom domain with Let's Encrypt SSL, and built a Telegram bot to handle digital product sales end-to-end.",
-      results: [
-        { metric: 'Server Stack', value: 'Ubuntu + Nginx', icon: Server },
-        { metric: 'Secure Domain', value: "Let's Encrypt SSL", icon: Lock },
-        { metric: 'Sales Channel', value: 'Telegram Bot', icon: Bot },
-      ],
-      image: '/it-infrastructure-servers.jpg',
-      category: 'IT Infrastructure & Security',
-      color: 'teal',
       href: '/contact',
     }
   ];
@@ -148,6 +167,14 @@ const CaseStudies = () => {
       text: 'text-teal-600',
       border: 'border-teal-200',
       ring: 'ring-teal-500/20',
+    },
+    violet: {
+      gradient: 'from-violet-500 to-purple-500',
+      hoverGradient: 'hover:from-violet-500 hover:to-purple-500',
+      bg: 'bg-violet-50',
+      text: 'text-violet-600',
+      border: 'border-violet-200',
+      ring: 'ring-violet-500/20',
     },
   };
 
@@ -257,10 +284,10 @@ const CaseStudies = () => {
                       return (
                         <div
                           key={resultIndex}
-                          className="rounded-xl bg-slate-50 p-3 text-center transition-colors duration-300 hover:bg-slate-100"
+                          className="rounded-xl bg-slate-50 p-3 text-center transition-colors duration-300 hover:bg-slate-100 overflow-hidden"
                         >
                           <Icon className={`mx-auto mb-2 h-5 w-5 ${styles.text}`} />
-                          <div className="mb-0.5 text-lg font-bold text-slate-900">
+                          <div className="mb-0.5 text-lg font-bold text-slate-900 whitespace-nowrap overflow-hidden text-ellipsis">
                             {result.value}
                           </div>
                           <div className="text-[10px] leading-tight text-slate-600">
