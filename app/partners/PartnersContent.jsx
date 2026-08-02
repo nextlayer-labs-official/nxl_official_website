@@ -56,6 +56,22 @@ export default function PartnersContent() {
       specialization: "Endpoint Security & Threat Protection",
       partnership: "Security Technology Partner",
       category: "Security"
+    },
+    {
+      name: "Kaspersky",
+      logo: "/kaspersky.svg",
+      description: "Global cybersecurity vendor providing endpoint protection, threat intelligence, and enterprise security solutions trusted by businesses worldwide.",
+      specialization: "Endpoint Security & Threat Intelligence",
+      partnership: "Authorized B2B Partner",
+      category: "Security"
+    },
+    {
+      name: "Wasabi",
+      logo: "/wasabi.svg",
+      description: "High-performance, low-cost cloud object storage for backup, archival, and business continuity, without the egress fees of traditional cloud providers.",
+      specialization: "Cloud Object Storage",
+      partnership: "MSP Partner",
+      category: "Cloud"
     }
   ];
 
