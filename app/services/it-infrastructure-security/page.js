@@ -266,7 +266,7 @@ export default function ITInfrastructureSecurityPage() {
                   href="/contact"
                   className="block w-full mt-6 bg-brand-600 text-white py-3 rounded-lg font-semibold hover:bg-brand-700 transition-colors duration-200 text-sm sm:text-base text-center"
                 >
-                  Learn More
+                  Ask About {item.title}
                 </Link>
               </div>
             ))}
